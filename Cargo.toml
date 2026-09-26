@@ -1,0 +1,69 @@
+[package]
+name = "passwordbook"
+version = "1.0.0"
+edition = "2021"
+description = "Windows本地密码本"
+license = "MIT"
+
+[[bin]]
+name = "passwordbook"
+path = "src/main.rs"
+
+[dependencies]
+# GUI
+eframe = "0.30"
+egui = "0.30"
+
+# 数据库
+rusqlite = { version = "0.31", features = ["bundled"] }
+
+# 加密：AES-256-GCM、PBKDF2 密钥派生（RustCrypto，经过充分审计&标准实现）
+aes-gcm = "0.10"
+pbkdf2 = "0.12"
+hmac = "0.12"
+sha2 = "0.10"
+
+# 剪贴板
+arboard = "3.3"
+
+# 系统托盘（最小化到托盘 / 关闭时不退出）
+tray-icon = "0.19"
+
+# 原生文件对话框（备份/恢复选择）
+rfd = "0.15"
+
+# CSV 导入（Chrome/Edge/Firefox 密码导出格式）
+csv = "1.3"
+
+# 密码学安全随机数
+rand = "0.8"
+rand_chacha = "0.3"
+
+# 序列化
+serde = { version = "1", features = ["derive"] }
+bincode = "1.3"
+
+# 时间
+chrono = "0.4"
+
+# 内存安全擦除
+zeroize = { version = "1", features = ["derive"] }
+
+# Windows 注册表（开机自启）
+winreg = "0.52"
+
+# Windows 系统 API（屏幕尺寸、DPI 缩放，用于窗口居中）
+windows-sys = { version = "0.59", features = ["Win32_UI_WindowsAndMessaging", "Win32_UI_HiDpi"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+
+[profile.dev]
+opt-level = 1
+
+[build-dependencies]
+winresource = "0.1"
+png = "0.17"

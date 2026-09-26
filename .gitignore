@@ -1,0 +1,27 @@
+# Rust 构建产物
+/target/
+debug/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# 本地数据库 & 日志（开发时可能残留）
+*.db
+*.db-shm
+*.db-wal
+tray_debug.log
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+
+# 构建缓存
+CACHEDIR.TAG
+
+# 发布产物
+release-package/
+*.zip
