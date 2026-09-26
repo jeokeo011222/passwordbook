@@ -5,7 +5,7 @@
 **纯本地 · 离线加密 · Windows 密码管理工具**
 
 [![Rust](https://img.shields.io/badge/Rust-1.75%2B-CE422B?style=for-the-badge&logo=rust)](https://www.rust-lang.org/)
-[![License](https://img.shields.io/badge/License-Custom-yellow.svg?style=for-the-badge)](https://github.com/jeokeo011222/quantbot/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/License-PolyForm%20Noncommercial-yellow.svg?style=for-the-badge)](LICENSE)
 [![OS](https://img.shields.io/badge/Windows-10%2F11-0078D4?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows)
 [![Release](https://img.shields.io/github/v/release/jeokeo011222/passwordbook?style=for-the-badge&color=brightgreen)](https://github.com/jeokeo011222/passwordbook/releases)
 [![Downloads](https://img.shields.io/github/downloads/jeokeo011222/passwordbook/total?style=for-the-badge)](https://github.com/jeokeo011222/passwordbook/releases)
@@ -283,7 +283,7 @@ cargo build --release  # Release 构建
 
 ## 📄 License
 
-本项目协议参见：[quantbot LICENSE](https://github.com/jeokeo011222/quantbot/blob/main/LICENSE)
+本项目采用 [PolyForm Noncommercial License 1.0.0](LICENSE) —— 商业使用请联系授权，个人学习/科研/非营利教育免费。
 
 ---
 
