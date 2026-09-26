@@ -287,6 +287,17 @@ cargo build --release  # Release 构建
 
 ---
 
+## 📮 联系我
+
+| 渠道 | 方式 |
+|------|------|
+| GitHub | [@jeokeo011222](https://github.com/jeokeo011222) |
+| QQ | **3571038944** |
+
+欢迎提 Issue / PR / 功能建议！
+
+---
+
 <div align="center">
-<sub>Built with ❤️ by <a href="https://github.com/jeokeo011222">Jeokeo011222</a> in Rust</sub>
+<sub>Built with ❤️ by <a href="https://github.com/jeokeo011222">Jeokeo011222</a> · QQ 3571038944</sub>
 </div>
